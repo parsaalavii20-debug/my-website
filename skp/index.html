@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<title>Kerman Part | لوازم یدکی خودرو</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header" id="header">
+
+<div class="logo-box">
+
+<div class="logo-line"></div>
+
+<div>
+
+<h1 class="logo-title">
+Kerman Part
+</h1>
+
+<p class="logo-subtitle">
+پخش لوازم یدکی خودرو
+</p>
+
+</div>
+
+</div>
+
+<div class="header-actions">
+
+<div class="search-wrapper">
+
+<input
+type="text"
+id="searchInput"
+placeholder="جستجوی محصول..."
+>
+
+</div>
+
+<button id="searchBtn" class="icon-btn">
+
+<svg viewBox="0 0 24 24" fill="none">
+<circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+<path d="M20 20L17 17" stroke="currentColor" stroke-width="2"/>
+</svg>
+
+</button>
+
+<button id="menuBtn" class="icon-btn cart-btn">
+
+<svg viewBox="0 0 24 24" fill="none">
+<path d="M3 5H5L7 15H18L21 7H8" stroke="currentColor" stroke-width="2"/>
+<circle cx="9" cy="19" r="1"/>
+<circle cx="18" cy="19" r="1"/>
+</svg>
+
+<span id="cartCount">
+0
+</span>
+
+</button>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img
+src="images/6.avif"
+alt="Kerman Part"
+class="hero-image"
+>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div class="glass-card">
+
+<h2>
+تامین تخصصی قطعات یدکی خودرو
+</h2>
+
+<p>
+عرضه انواع سنسور، کویل، سوکت، رله، تسمه و قطعات برقی خودرو
+</p>
+
+<a href="#productsSection" class="hero-btn" style="background-color:#BF4646 ; color:#FAFAFA; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+مشاهده محصولات
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CATEGORY -->
+
+<section class="categories">
+
+<h2 class="section-title">
+دسته بندی محصولات
+</h2>
+
+<div class="category-slider">
+
+
+<button
+class="category-card all-products"
+data-target="all"
+>
+
+
+<span>همه محصولات</span>
+
+</button>
+
+<button class="category-card" data-target="sensor">
+<img src="images/categories/sensor.jpg">
+<span>سنسور</span>
+</button>
+
+<button class="category-card" data-target="switch">
+<img src="images/categories/switch.jpg">
+<span>فشنگی</span>
+</button>
+
+<button class="category-card" data-target="stepper">
+<img src="images/categories/stepper.jpg">
+<span>استپر</span>
+</button>
+
+<button class="category-card" data-target="coil">
+<img src="images/categories/coil.jpg">
+<span>کویل</span>
+</button>
+
+<button class="category-card" data-target="socket">
+<img src="images/categories/socket.jpg">
+<span>سوکت</span>
+</button>
+
+<button class="category-card" data-target="relay">
+<img src="images/categories/relay.jpg">
+<span>رله</span>
+</button>
+
+<button class="category-card" data-target="spark">
+<img src="images/categories/spark.jpg">
+<span>شمع</span>
+</button>
+
+<button class="category-card" data-target="belt">
+<img src="images/categories/belt.jpg">
+<span>تسمه دینام</span>
+</button>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section
+id="productsSection"
+class="products-section"
+>
+
+<div class="section-header">
+
+<h2>
+محصولات
+</h2>
+
+<div class="section-line"></div>
+
+</div>
+
+<div
+class="products-grid"
+id="productsGrid"
+>
+
+</div>
+
+</section>
+
+<!-- PRODUCT MODAL -->
+
+<div
+class="modal"
+id="productModal"
+>
+
+<div class="modal-content">
+
+<button
+id="closeModal"
+class="close-btn"
+>
+✕
+</button>
+
+<img
+id="modalImage"
+>
+
+<h3
+id="modalTitle"
+>
+</h3>
+
+<p
+id="modalInfo"
+>
+</p>
+
+<div
+id="modalPrice"
+class="modal-price"
+>
+</div>
+
+<div class="quantity-box">
+
+<label>
+تعداد
+</label>
+
+<input
+type="number"
+id="quantityInput"
+min="1"
+value="1"
+>
+
+</div>
+
+<button
+id="addToCartBtn"
+class="primary-btn"
+>
+
+افزودن به سبد خرید
+
+</button>
+
+</div>
+
+</div>
+
+<!-- CART OVERLAY -->
+
+<div
+id="cartOverlay"
+class="cart-overlay"
+>
+</div>
+
+<!-- CART -->
+
+<aside
+class="side-menu"
+id="sideMenu"
+>
+
+<div class="cart-header">
+
+<h3>
+سبد خرید
+</h3>
+
+<button
+id="closeMenuBtn"
+class="close-btn"
+>
+✕
+</button>
+
+</div>
+
+<ul id="cartList"></ul>
+
+<div
+id="cartTotal"
+class="cart-total"
+>
+جمع کل: 0 تومان
+</div>
+
+<button
+id="checkoutBtn"
+class="checkout-btn"
+>
+
+ثبت سفارش واتساپ
+
+</button>
+
+</aside>
+
+<!-- CUSTOMER MODAL -->
+
+<div
+id="customerModal"
+class="modal"
+>
+
+<div class="modal-content">
+
+<button
+id="closeCustomerModal"
+class="close-btn"
+>
+✕
+</button>
+
+<h3>
+اطلاعات مشتری
+</h3>
+
+<input
+type="text"
+id="customerName"
+placeholder="نام و نام خانوادگی"
+class="customer-input"
+>
+
+<input
+type="text"
+id="customerPhone"
+placeholder="شماره تماس"
+class="customer-input"
+>
+
+<textarea
+id="customerAddress"
+placeholder="آدرس کامل"
+class="customer-input"
+></textarea>
+
+<button
+id="sendOrderBtn"
+class="primary-btn"
+>
+
+ارسال سفارش
+
+</button>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+طراحی و توسعه
+</p>
+
+<h4>
+پارسا علویان
+</h4>
+
+<span>
+09130468709
+</span>
+
+</footer>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
