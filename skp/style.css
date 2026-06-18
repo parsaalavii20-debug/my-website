@@ -1038,16 +1038,26 @@ repeat(3,1fr);
 
 }
 
-@media (max-width: 768px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media (max-width:768px){
+
+.products-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
 }
 
-@media (max-width: 480px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr); /* همچنان 2 تا */
-  }
+}
+
+@media (max-width:480px){
+
+.products-grid{
+
+grid-template-columns:
+1fr;
+
+}
+
 }
 
 }
