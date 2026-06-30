@@ -2201,6 +2201,374 @@ height:50px;
 }
 
 }
+/*======================================
+MOBILE OPTIMIZATION
+======================================*/
+
+/*========== HEADER ==========*/
+@media (max-width:768px){
+
+
+
+#header{
+padding:10px 0;
+}
+
+.logo img{
+width:42px;
+height:42px;
+}
+
+.logo h2{
+font-size:16px;
+}
+
+.logo span{
+display:none;
+}
+
+/* فقط سبد خرید و سرچ بماند */
+#menuButton,
+.menu-button,
+.hamburger{
+display:none !important;
+}
+
+/*========== HERO ==========*/
+
+.hero{
+
+height:390px;
+
+margin-top:66px;
+
+border-radius:0 0 28px 28px;
+
+}
+
+.hero-image{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.hero-overlay{
+
+background:linear-gradient(
+180deg,
+rgba(0,0,0,.58),
+rgba(0,0,0,.35)
+);
+
+}
+
+.hero-content{
+
+width:90%;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+}
+
+.hero-badge{
+
+font-size:12px;
+
+padding:8px 18px;
+
+margin-bottom:12px;
+
+}
+
+.hero-content h1{
+
+font-size:40px;
+
+margin-bottom:10px;
+
+line-height:1.1;
+
+}
+
+.hero-content p{
+
+font-size:15px;
+
+line-height:1.8;
+
+margin-bottom:18px;
+
+max-width:310px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+gap:10px;
+
+}
+
+.hero-buttons .btn{
+
+height:44px;
+
+padding:0 22px;
+
+font-size:15px;
+
+border-radius:14px;
+
+}
+
+/*========== SEARCH ==========*/
+
+.search-box{
+
+height:54px;
+
+border-radius:18px;
+
+}
+
+.search-box input{
+
+font-size:15px;
+
+}
+
+/*========== PRODUCT BUTTONS ==========*/
+
+.product-card .btn,
+.product-btn{
+
+height:42px;
+
+font-size:14px;
+
+font-weight:600;
+
+border-radius:12px;
+
+}
+
+/*========== PRODUCT POPUP ==========*/
+
+.product-modal-content{
+
+width:92%;
+
+max-width:360px;
+
+padding:18px;
+
+border-radius:22px;
+
+}
+
+.product-modal-content img{
+
+max-height:170px;
+
+object-fit:contain;
+
+}
+
+.product-modal-content h2{
+
+font-size:28px;
+
+margin:10px 0;
+
+}
+
+.product-modal-content .price{
+
+font-size:22px;
+
+}
+
+.quantity-box{
+
+margin:18px 0;
+
+}
+
+.add-cart-btn{
+
+height:46px;
+
+font-size:15px;
+
+}
+
+/*========== TOAST ==========*/
+
+.toast{
+
+font-size:13px;
+
+padding:10px 16px;
+
+min-height:auto;
+
+line-height:1.4;
+
+border-radius:12px;
+
+max-width:260px;
+
+text-align:center;
+
+}
+
+}
+/*======================================
+PRODUCT MODAL MOBILE
+======================================*/
+
+@media (max-width:768px){
+
+.modal{
+
+padding:12px;
+
+}
+
+.modal-content{
+
+width:90%;
+
+max-width:340px;
+
+grid-template-columns:1fr;
+
+border-radius:20px;
+
+overflow:hidden;
+
+}
+
+.modal-image{
+
+padding:18px;
+
+height:170px;
+
+}
+
+.modal-image img{
+
+width:85%;
+
+height:85%;
+
+object-fit:contain;
+
+}
+
+.modal-info{
+
+padding:18px;
+
+}
+
+.close-btn{
+
+width:38px;
+
+height:38px;
+
+font-size:16px;
+
+top:10px;
+
+left:10px;
+
+}
+
+#modalCode{
+
+font-size:11px;
+
+margin-bottom:6px;
+
+}
+
+#modalTitle{
+
+font-size:22px;
+
+margin-bottom:10px;
+
+line-height:1.3;
+
+}
+
+#modalInfo{
+
+font-size:13px;
+
+line-height:1.8;
+
+margin-bottom:14px;
+
+}
+
+#modalPrice{
+
+font-size:24px;
+
+margin-bottom:18px;
+
+}
+
+}
+/*======================================
+CUSTOMER BUTTONS MOBILE
+======================================*/
+
+@media (max-width:768px){
+
+.customer-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+margin-top:16px;
+
+}
+
+.customer-buttons .primary-btn,
+.customer-buttons .secondary-btn{
+
+height:44px;
+
+padding:0 16px;
+
+font-size:14px;
+
+font-weight:600;
+
+line-height:1;
+
+border-radius:14px;
+
+}
+
+}
 
 /*======================================
 END
